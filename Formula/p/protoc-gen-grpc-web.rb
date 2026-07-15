@@ -4,6 +4,7 @@ class ProtocGenGrpcWeb < Formula
   url "https://github.com/grpc/grpc-web/archive/refs/tags/2.1.0.tar.gz"
   sha256 "7dfe1a7fe858b2f43a4504f9378739b02371a30f5ec2823df529713a73ad681c"
   license "Apache-2.0"
+  revision 1
 
   livecheck do
     url :stable
