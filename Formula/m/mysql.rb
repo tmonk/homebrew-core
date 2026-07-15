@@ -7,6 +7,7 @@ class Mysql < Formula
   mirror "https://repo.mysql.com/apt/ubuntu/pool/mysql-innovation/m/mysql-community/mysql-community_9.7.1.orig.tar.gz"
   sha256 "dabff263022be6a09151c21812322873437e0d77aec8c4cc7381882c3ea1aeae"
   license "GPL-2.0-only" => { with: "Universal-FOSS-exception-1.0" }
+  revision 1
 
   livecheck do
     url "https://dev.mysql.com/downloads/mysql/?tpl=files&os=src"
@@ -134,6 +135,10 @@ class Mysql < Formula
     system "cmake", "-S", ".", "-B", "build", *args, *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
+
+    # mysqld logs this under the cgroup memory limits of Homebrew CI, failing the check below
+    inreplace prefix/"mysql-test/include/mtr_warnings.sql", '("THE_LAST_SUPPRESSION");',
+              "(\"Server ignores the discovered container restrictions\"),\n (\"THE_LAST_SUPPRESSION\");"
 
     cd prefix/"mysql-test" do
       system "./mysql-test-run.pl", "check", "--vardir=#{buildpath}/mysql-test-vardir"
