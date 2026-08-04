@@ -4,7 +4,7 @@ class LibheifPlugins < Formula
   url "https://github.com/strukturag/libheif/releases/download/v1.23.1/libheif-1.23.1.tar.gz"
   sha256 "0de0327f60fcd47de90d5654c6fe152232738d60d84fe084ec3e0f35e03b166a"
   license "LGPL-3.0-or-later"
-  revision 1
+  revision 2
 
   livecheck do
     formula "libheif"
