@@ -4,6 +4,7 @@ class AutoEditor < Formula
   url "https://github.com/WyattBlue/auto-editor/archive/refs/tags/31.4.2.tar.gz"
   sha256 "c12b00ad1fcad4d62bdc863c41c42a245410f8c74e3bdd6d1b5d4916786e3ce0"
   license "Unlicense"
+  revision 1
   head "https://github.com/WyattBlue/auto-editor.git", branch: "master"
 
   bottle do
@@ -20,6 +21,13 @@ class AutoEditor < Formula
   depends_on "ffmpeg"
   depends_on "ggml"
   depends_on "whisper-cpp"
+
+  # Fix builds with FFmpeg 9. Remove with the next release.
+  patch do
+    url "https://github.com/WyattBlue/auto-editor/commit/be5ca8116a7fd179837301e3fe1383fff6b24a2e.patch?full_index=1"
+    sha256 "ab37864e4de76b711dc3867ecf7fcfb7abf9d6bad5bd2f4d800383c9013e28f2"
+    type :backport
+  end
 
   def install
     system "nimble", "brewmake"
