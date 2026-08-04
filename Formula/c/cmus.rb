@@ -2,7 +2,7 @@ class Cmus < Formula
   desc "Music player with an ncurses based interface"
   homepage "https://cmus.github.io/"
   license "GPL-2.0-or-later"
-  revision 3
+  revision 4
   head "https://github.com/cmus/cmus.git", branch: "master"
 
   stable do
