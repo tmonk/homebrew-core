@@ -6,6 +6,7 @@ class Manim < Formula
   url "https://files.pythonhosted.org/packages/dc/3b/ad54ce02f3e95d17d016cb1254708ae3795b60d5661f3b2085655940a565/manim-0.20.1.tar.gz"
   sha256 "1e9747fb2fc1bde58ad09bcbd77d141793ce4b61811726a7fce537193d92e16b"
   license "MIT"
+  revision 1
   head "https://github.com/manimCommunity/manim.git", branch: "main"
 
   # FIXME: Fails trying to resolve pycairo as pip tries compiling it but cannot find cairo
