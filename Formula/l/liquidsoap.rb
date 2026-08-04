@@ -2,6 +2,7 @@ class Liquidsoap < Formula
   desc "Audio and video streaming language"
   homepage "https://www.liquidsoap.info"
   license "GPL-2.0-or-later"
+  revision 1
   head "https://github.com/savonet/liquidsoap.git", branch: "main"
 
   stable do
