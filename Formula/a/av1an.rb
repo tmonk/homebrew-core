@@ -2,7 +2,7 @@ class Av1an < Formula
   desc "Cross-platform command-line encoding framework"
   homepage "https://github.com/rust-av/Av1an"
   license "GPL-3.0-only"
-  revision 1
+  revision 2
   head "https://github.com/rust-av/Av1an.git", branch: "master"
 
   stable do
