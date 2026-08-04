@@ -4,6 +4,7 @@ class Ffmpegthumbnailer < Formula
   url "https://github.com/dirkvdb/ffmpegthumbnailer/archive/refs/tags/v2.3.0.tar.gz"
   sha256 "ddf561e294385f07d0bd5a28d0aab9de79b8dbaed29b576f206d58f3df79b508"
   license "GPL-2.0-or-later"
+  revision 1
   head "https://github.com/dirkvdb/ffmpegthumbnailer.git", branch: "master"
 
   bottle do
