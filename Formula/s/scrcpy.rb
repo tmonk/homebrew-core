@@ -4,6 +4,7 @@ class Scrcpy < Formula
   url "https://github.com/Genymobile/scrcpy/archive/refs/tags/v4.1.tar.gz"
   sha256 "537b2ade623cb94b6edddfa5c61bf0b0af21484aa8365ea2531b686ea573249a"
   license "Apache-2.0"
+  revision 1
 
   livecheck do
     url :stable
