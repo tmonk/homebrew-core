@@ -4,6 +4,7 @@ class VapoursynthBestsource < Formula
   url "https://github.com/vapoursynth/bestsource/archive/refs/tags/R20.tar.gz"
   sha256 "e44d84ce80be44f5e65a8daf007fa082af00a2aa81a2f19448acfa6abb49048a"
   license "MIT"
+  revision 1
   head "https://github.com/vapoursynth/bestsource.git", branch: "master"
 
   livecheck do
