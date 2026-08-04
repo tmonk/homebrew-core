@@ -5,7 +5,7 @@ class Synfig < Formula
   url "https://github.com/synfig/synfig/releases/download/v1.5.5/synfig-1.5.5.tar.gz"
   sha256 "95783c92925bd8ae494e00fdab0340caba9b19d2a0aac989fd8c200434b26f06"
   license "GPL-3.0-or-later"
-  revision 2
+  revision 3
   head "https://github.com/synfig/synfig.git", branch: "master"
 
   livecheck do
