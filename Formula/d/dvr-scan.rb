@@ -6,6 +6,7 @@ class DvrScan < Formula
   url "https://files.pythonhosted.org/packages/47/84/a3256473a827f0c17e3e724c409a33146a26d6515f87df38c3a649547b7d/dvr_scan-1.8.2.1.tar.gz"
   sha256 "e424eaa8f2502a773588c97722bfe163f1317129e6e7073c25c4282bcf5f8e40"
   license "BSD-2-Clause"
+  revision 1
   head "https://github.com/Breakthrough/DVR-Scan.git", branch: "main"
 
   no_autobump! because: "macOS resources cannot be updated on linux CI"
