@@ -4,7 +4,7 @@ class Glyph < Formula
   url "https://github.com/seatedro/glyph/archive/refs/tags/v1.0.11.tar.gz"
   sha256 "7de7936a13b92b18240134bef64c006ab73988850a8776a1b276e22b73377f15"
   license "MIT"
-  revision 1
+  revision 2
 
   bottle do
     rebuild 1
