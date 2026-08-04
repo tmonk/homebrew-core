@@ -5,6 +5,7 @@ class Glslviewer < Formula
     tag:      "3.5.2",
     revision: "edb58380ba8523d32e72966d0d0508ba78c28ffd"
   license "BSD-3-Clause"
+  revision 1
   version_scheme 1
   head "https://github.com/patriciogonzalezvivo/glslViewer.git", branch: "main"
 
