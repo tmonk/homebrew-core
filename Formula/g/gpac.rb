@@ -4,6 +4,7 @@ class Gpac < Formula
   url "https://github.com/gpac/gpac/archive/refs/tags/v26.07.0.tar.gz"
   sha256 "57822c1a74dcb83d76ff1f671e1b4fae2e7614e8194a5adb9f20661e0e9421dd"
   license "LGPL-2.1-or-later"
+  revision 1
   compatibility_version 1
   head "https://github.com/gpac/gpac.git", branch: "master"
 
