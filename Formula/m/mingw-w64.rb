@@ -11,7 +11,7 @@ class MingwW64 < Formula
     # gcc
     "GPL-3.0-or-later" => { with: "GCC-exception-3.1" },
   ]
-  revision 2
+  revision 3
 
   livecheck do
     url :stable
@@ -52,9 +52,9 @@ class MingwW64 < Formula
   end
 
   resource "gcc" do
-    url "https://ftpmirror.gnu.org/gnu/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz"
-    mirror "https://ftp.gnu.org/gnu/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz"
-    sha256 "50efb4d94c3397aff3b0d61a5abd748b4dd31d9d3f2ab7be05b171d36a510f79"
+    url "https://ftpmirror.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz"
+    mirror "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz"
+    sha256 "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e"
   end
 
   def target_archs
